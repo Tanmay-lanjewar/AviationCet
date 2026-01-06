@@ -1,0 +1,112 @@
+.payment-container {
+    background-color: #f0f7ff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .payment-container h3 {
+    color: #1d4ed8;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .payment-description {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .payment-details {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .payment-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+  }
+  
+  .payment-field .label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .payment-field .value {
+    font-weight: 500;
+    color: #1d4ed8;
+  }
+  
+  .warning-box {
+    background-color: #ffebeb;
+    color: #d9534f;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pay-now-button {
+    background-color: #1d4ed8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .pay-now-button:hover {
+    background-color: #163dbb;
+  }
+  
+  #payment_email{
+    flex-wrap: wrap;
+  }
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999; /* Ensure it appears above everything */
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ffffff;
+    border-top: 5px solid #3399cc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

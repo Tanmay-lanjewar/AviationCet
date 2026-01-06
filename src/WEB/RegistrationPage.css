@@ -1,0 +1,290 @@
+.progress1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Space circles evenly */
+  align-items: center;
+  max-width: 300px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the progress line */
+}
+
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  background-color: lightgray;
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #0E548E;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 2;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.circle.active {
+  background-color: #0E548E;
+  color: white;
+  border: 2px solid #0E548E;
+}
+
+.circle:hover {
+  background-color: rgba(25, 126, 214, 0.1);
+}
+.content {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e9f5ff; /* Light blue background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.content-title {
+  font-size: 1.5rem;
+  color: rgb(25, 126, 214); /* Blue color */
+  margin-bottom: 0.5rem;
+}
+
+.content-description {
+  font-size: 1rem;
+  color: #555; /* Subtle gray for description */
+  line-height: 1.5;
+}
+
+.content h4 {
+  margin: 0;
+}
+
+.content p {
+  margin: 0;
+}
+.btns {
+  display: flex;
+  justify-content: space-between; /* Space buttons apart */
+  width: 100%; /* Stretch to full container width */
+  margin-top: 1rem;
+}
+
+.btn-form {
+  padding: 0.7rem 1.5rem; /* Button size */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Emphasize text */
+  color: rgb(25, 126, 214); /* Primary blue color */
+  background-color: #fff; /* White background */
+  border: 2px solid rgb(25, 126, 214); /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.btn-form:hover:not(:disabled) {
+  background-color: rgb(25, 126, 214); /* Fill with blue on hover */
+  color: #fff; /* Text turns white on hover */
+}
+
+.btn-form:disabled {
+  background-color: #e0e0e0; /* Gray background for disabled */
+  color: #999; /* Muted gray text */
+  cursor: not-allowed; /* Disable pointer */
+  border-color: #ccc; /* Muted gray border */
+}
+
+.btn-form:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add click shadow */
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  text-align: left;
+  
+  margin-bottom: 0.5rem;
+
+}
+
+input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: rgb(25, 126, 214);
+  outline: none;
+  box-shadow: 0 0 4px rgba(25, 126, 214, 0.5);
+}
+
+
+
+
+
+
+    /* Wrapper for the whole login prompt */
+#unique-login-prompt-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  /*background: linear-gradient(135deg, #6a11cb, #2575fc); #CFD8EC*/
+  background: linear-gradient(135deg, #CFD8EC, #1894C3);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Content Container */
+#unique-login-prompt-content {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  height: 70%;
+}
+
+/* Left Section (Image) */
+#unique-login-prompt-image {
+  flex: 1;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#unique-login-prompt-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Right Section (Text) */
+#unique-login-prompt-text {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#unique-login-prompt-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+#unique-login-prompt-message {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #666;
+}
+
+#unique-login-prompt-button {
+  background-color: #177EB2;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#unique-login-prompt-button:hover {
+  background-color: #11669B;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #unique-login-prompt-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #unique-login-prompt-image, 
+  #unique-login-prompt-text {
+    flex: none;
+    width: 100%;
+  }
+
+  #unique-login-prompt-text {
+    padding: 20px;
+  }
+
+  #unique-login-prompt-title {
+    font-size: 1.5rem;
+  }
+
+  #unique-login-prompt-message {
+    font-size: 0.9rem;
+  }
+
+  #unique-login-prompt-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+.error-text{
+  color: red;
+}
+/* Custom styles for the new elements */
+.unique-otp-input {
+  border-color: #007bff; /* Example: Apply custom styling for OTP input */
+}
+
+.unique-verify-otp-btn {
+  background-color: #28a745; /* Example: Green button for OTP verification */
+  color: white;
+}
+
+.unique-password-toggle {
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.unique-send-otp-btn {
+  background-color: #007bff; /* Example: Blue button for sending OTP */
+  color: white;
+}
+#otp_btn{
+  margin-left: 15px;
+  background: #2977b7;
+}
+#otp_btn:hover{
+  background: #0e548e;
+}
+.unique-password-toggle{
+  outline: none !important;
+}

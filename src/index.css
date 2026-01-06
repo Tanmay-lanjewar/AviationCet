@@ -1,0 +1,20 @@
+input::placeholder {
+    font-size: 16px;  /* Adjust as needed */
+  }
+  textarea::placeholder {
+    font-size: 16px;  /* Adjust as needed */
+  }
+  .small-font{
+    font-size: 16px;
+  }
+  #dob {
+      /* text color */
+    font-size: 16px; /* font size */
+     /* padding inside the input */
+  }
+  #category{
+    font-size: 16px;
+  }
+  #gender{
+    font-size: 16px;
+  }

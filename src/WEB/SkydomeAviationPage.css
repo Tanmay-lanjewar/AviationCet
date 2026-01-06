@@ -1,0 +1,145 @@
+.skydome-container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f8fc;
+    color: #1a1a1a;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .skydome-header {
+    text-align: center;
+    background-color: #004d80;
+    color: white;
+    padding: 30px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skydome-logo {
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .skydome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .skydome-about,
+  .skydome-courses,
+  .skydome-eligibility,
+  .skydome-fees,
+  .skydome-testimonials,
+  .skydome-gallery {
+    background: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .skydome-about h2,
+  .skydome-courses h2,
+  .skydome-eligibility h2,
+  .skydome-fees h2,
+  .skydome-testimonials h2,
+  .skydome-gallery h2 {
+    color: #004d80;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+  }
+  
+  .skydome-about ul,
+  .skydome-eligibility ul,
+  .skydome-fees ul {
+    padding-left: 20px;
+    line-height: 1.7;
+    list-style-type: square;
+  }
+  
+  .skydome-courses p {
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  
+  .skydome-testimonials blockquote {
+    background-color: #eef6ff;
+    padding: 20px;
+    border-left: 5px solid #0077cc;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+  }
+  
+  .skydome-testimonials cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .skydome-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .skydome-gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skydome-gallery-img:hover {
+    transform: scale(1.03);
+  }
+  
+  .skydome-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d80;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .skydome-footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .skydome-hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url('./images/college1.jpeg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skydome-hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .skydome-hero-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .skydome-hero-subtitle {
+    font-size: 1.5rem;
+  }
+  

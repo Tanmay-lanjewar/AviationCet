@@ -1,0 +1,109 @@
+.confirmation-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #28a745;
+  }
+  
+  .details-section {
+    text-align: left;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 0px;
+    margin: 10px auto;
+  }
+  
+  .exam-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 8px;
+  }
+  .download-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #128ff7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+
+ 
+  .site-mobile-menu2 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Initially off-screen */
+}
+
+.site-mobile-menu2.active {
+    display: block;
+    transform: translateX(0); /* Slides in when active */
+    background: white;
+    z-index: 100000000000000;
+}
+
+#uper_div_cross{
+  display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 20px !important;
+}
+#upper_cross_icon{
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+#skydome_none{
+  display: block !important;
+}
+.skydome_grid{
+  display: grid !important;
+  grid-template-columns: 1.5fr 0.5fr !important;
+}
+.responsive-logo{
+  height: 300px;
+}
+@media (max-width:1101px) {
+  .skydome_grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width:530px) {
+  .responsive-logo{
+    height: 200px;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+.footer_contact_info{
+  color: rgba(255, 255, 255, 0.47);
+}
