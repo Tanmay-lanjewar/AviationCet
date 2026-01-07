@@ -15,10 +15,10 @@ const RegisterPage = () => {
     const [otpSent, setOtpSent] = useState(false);
     const [loading, setLoading] = useState(false);  // State for loading
 
-    const validatePassword = (password) => {
-        const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
-        return regex.test(password);
-    };
+  const validatePassword = (password) => {
+  return /^\d+$/.test(password);
+};
+
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
@@ -30,10 +30,7 @@ const RegisterPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!validatePassword(password)) {
-            toast.error("Password must be at least 8 characters long, contain a letter, a number, and a special character.");
-            return;
-        }
+       
 
         try {
             const response = await axios.post('https://skydome-backend-6cky.onrender.com/register', { username, email, password, otp });  // ✅ Include OTP
