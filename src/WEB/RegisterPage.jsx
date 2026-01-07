@@ -24,20 +24,7 @@ const RegisterPage = () => {
         setPasswordVisible(!passwordVisible);
     };
 
-    // Handle OTP submission
-    const handleOtpSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const response = await axios.post('https://skydome-backend-6cky.onrender.com/verify-otp', { email, otp });
-            if (response.data.success) {
-                handleSubmit(e);  // Call the original submit function after OTP verification
-            } else {
-                toast.error('Invalid OTP. Please try again.');
-            }
-        } catch (err) {
-            toast.error('OTP verification failed. Please try again.');
-        }
-    };
+ 
 
     // Handle form submission
     const handleSubmit = async (e) => {
@@ -98,7 +85,12 @@ const RegisterPage = () => {
             <div className="site-section">
                 <div className="container">
                     <div  className="row justify-content-center">
-                        <form ref={form} onSubmit={otpSent ? handleOtpSubmit : handleEmailSubmit} className="col-md-5">
+                        <form
+  ref={form}
+  onSubmit={otpSent ? handleSubmit : handleEmailSubmit}
+  className="col-md-5"
+>
+
                             {/* Username, email, and password input */}
                             <div>
                             {loading ? (  // Show loading spinner when loading is true
@@ -123,7 +115,7 @@ const RegisterPage = () => {
                                         </div>
                                         <div className="row">
                                             <div className="col-12">
-                                                <input type="submit" id="otp_btn" value="Verify OTP" className="btn bg-blue btn-lg px-5 unique-verify-otp-btn" />
+                                                <input type="submit" id="otp_btn" value="Register" className="btn bg-blue btn-lg px-5 unique-verify-otp-btn" />
                                             </div>
                                         </div>
                                     </div>
